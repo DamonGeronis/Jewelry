@@ -3,11 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { EventsAppComponent } from './events-app.component';
 import { EventsListComponent } from './Events/events-list.component';
+import { NavbarComponent } from './Navigation/navbar.component';
+
 
 @NgModule({
   declarations: [
     EventsAppComponent,
-    EventsListComponent
+    EventsListComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule
