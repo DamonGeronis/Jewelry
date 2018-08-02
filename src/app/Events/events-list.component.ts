@@ -2,7 +2,6 @@ import { Component, OnInit } from "@angular/core";
 import { EventService } from "./Shared/event.services";
 
 @Component({
-    selector: 'events-list',
     templateUrl: './events-list.component.html',
     styles: [`
      .thumbnail { min-height: 210px; }
