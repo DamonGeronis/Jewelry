@@ -1,0 +1,21 @@
+<div>
+    <h1>Upcoming Angular Events</h1>
+    <hr>
+    <div class="row">
+        <div class="col-md-5" *ngFor="let event of events">
+            <div [routerLink]="['/events', event.id]" class="well hoverwell thumbnail">
+                <h2>{{event.name}}</h2>
+                <div> Fecha de compra: {{event.date}}</div>
+                <div> Precio: ${{event.price}}</div>
+                <div> Características:
+                    <ul>
+                        <li>Peso: {{event.specifications.weight}}g</li>
+                        <li>Kilatage: {{event.specifications.kilatage}}k</li>
+                        <li>Material: {{event.specifications.metal}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
